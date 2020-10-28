@@ -12,6 +12,8 @@ import {
 } from "reactstrap";
 //Data
 import { listOfApplicants } from "../data/applicants";
+//HOC
+import tokenRoleCheck from "../components/hoc/tokenRoleCheck";
 
 const ApplicantsPage = () => {
   return (
@@ -72,4 +74,4 @@ const ApplicantsPage = () => {
   );
 };
 
-export default ApplicantsPage;
+export default tokenRoleCheck(ApplicantsPage);
